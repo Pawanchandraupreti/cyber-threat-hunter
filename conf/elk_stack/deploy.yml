@@ -1,0 +1,36 @@
+---
+- name: Deploy ELK Stack
+  hosts: siem_servers
+  become: yes
+  
+  vars:
+    elk_version: "8.9.1"
+    heap_size: "4g"
+
+  tasks:
+    - name: Install Java
+      ansible.builtin.apt:
+        name: openjdk-17-jdk
+        state: present
+
+    - name: Add Elastic GPG key
+      ansible.builtin.apt_key:
+        url: "https://artifacts.elastic.co/GPG-KEY-elasticsearch"
+        state: present
+
+    - name: Install Elasticsearch
+      ansible.builtin.apt:
+        name: elasticsearch={{ elk_version }}
+        state: present
+      notify: restart elasticsearch
+
+    - name: Configure Elasticsearch
+      ansible.builtin.template:
+        src: templates/elasticsearch.yml.j2
+        dest: /etc/elasticsearch/elasticsearch.yml
+
+  handlers:
+    - name: restart elasticsearch
+      ansible.builtin.service:
+        name: elasticsearch
+        state: restarted
