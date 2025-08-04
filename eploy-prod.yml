@@ -1,0 +1,10 @@
+- name: Deploy to AWS
+  uses: aws-actions/configure-aws-credentials@v2
+  with:
+    role-to-assume: ${{ secrets.AWS_ROLE }}
+    
+- name: Terraform Apply
+  run: |
+    cd config/terraform
+    terraform init -backend-config="access_token=${{ secrets.TF_TOKEN }}"
+    terraform apply -auto-approve -var="env=prod"
