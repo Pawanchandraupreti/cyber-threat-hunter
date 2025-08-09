@@ -8,6 +8,9 @@ class ThreatIntelFeed:
             versioning=aws.s3.BucketVersioningArgs(enabled=True),
             tags={"Classification": "TLP:AMBER"}
         )
+
+
+        
         aws.s3.BucketPolicy("lockdown",
             bucket=self.bucket.id,
             policy=Output.all(self.bucket.arn).apply(lambda arn: f"""{{
