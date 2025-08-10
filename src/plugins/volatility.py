@@ -9,9 +9,11 @@ class ThreatScanner:
         
     def find_malware(self):
         """Detects API unhooking and DLL injection"""
+
         plugins = [
             "windows.malfind.Malfind",
             "windows.pslist.PsList"
+            
         ]
         return {
             plugin: vol.run_plugin(plugin, self.config) 
