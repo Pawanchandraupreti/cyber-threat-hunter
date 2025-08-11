@@ -1,4 +1,5 @@
 ---
+
 - name: Deploy ELK Stack
   hosts: siem_servers
   become: yes
