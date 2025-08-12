@@ -7,7 +7,6 @@ allow {
     input.path = ["v1", "alerts"]
     input.user.role == "analyst"
 }
-
 allow {
     input.method == "POST"
     input.path = ["v1", "respond"]
