@@ -14,6 +14,7 @@ class ThreatScanner:
             "windows.pslist.PsList"
             
         ]
+        
         return {
             plugin: vol.run_plugin(plugin, self.config) 
             for plugin in plugins
