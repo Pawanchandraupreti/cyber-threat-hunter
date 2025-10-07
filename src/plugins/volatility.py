@@ -7,6 +7,7 @@ class ThreatScanner:
             memory_dump
         )
         
+        
     def find_malware(self):
         """Detects API unhooking and DLL injection"""
         plugins = [
@@ -15,7 +16,7 @@ class ThreatScanner:
             
         ]
         
-        
+
         return {
             plugin: vol.run_plugin(plugin, self.config) 
             for plugin in plugins
