@@ -12,5 +12,6 @@ uint32_t analyze_packet(uint8_t *pkt, uint32_t len) {
         }
     }
     
+    
     return sig;
 }
