@@ -8,3 +8,5 @@
     cd config/terraform
     terraform init -backend-config="access_token=${{ secrets.TF_TOKEN }}"
     terraform apply -auto-approve -var="env=prod"
+
+    
