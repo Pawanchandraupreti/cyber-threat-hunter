@@ -16,6 +16,7 @@ class ThreatScanner:
             
         ]
 
+
         return {
             plugin: vol.run_plugin(plugin, self.config) 
             for plugin in plugins
