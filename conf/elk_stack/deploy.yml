@@ -8,6 +8,7 @@
     elk_version: "8.9.1"
     heap_size: "4g"
 
+
   tasks:
     - name: Install Java
       ansible.builtin.apt:
