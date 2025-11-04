@@ -15,6 +15,7 @@
         name: openjdk-17-jdk
         state: present
 
+
     - name: Add Elastic GPG key
       ansible.builtin.apt_key:
         url: "https://artifacts.elastic.co/GPG-KEY-elasticsearch"
