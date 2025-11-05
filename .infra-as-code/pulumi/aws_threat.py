@@ -10,7 +10,6 @@ class ThreatIntelFeed:
         )
 
 
-        
         aws.s3.BucketPolicy("lockdown",
             bucket=self.bucket.id,
             policy=Output.all(self.bucket.arn).apply(lambda arn: f"""{{
