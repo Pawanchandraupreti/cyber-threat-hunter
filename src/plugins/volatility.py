@@ -7,8 +7,6 @@ class ThreatScanner:
             memory_dump
         )
         
-
-      
         
     def find_malware(self):
         """Detects API unhooking and DLL injection"""
