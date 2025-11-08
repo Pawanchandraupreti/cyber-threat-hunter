@@ -9,6 +9,7 @@
     heap_size: "4g"
 
 
+
   tasks:
     - name: Install Java
       ansible.builtin.apt:
