@@ -22,6 +22,8 @@ class SlackNotifier:
             }]
         }
         
+
+        
         try:
             response = requests.post(
                 self.webhook_url,
