@@ -15,6 +15,4 @@ class BeaconSimulator:
             send(IP(dst=server)/TCP(dport=443)/Raw(load=payload))  # Fixed TCP instead of ICP
             time.sleep(self.jitter())
 
-            
-
-            
+              
