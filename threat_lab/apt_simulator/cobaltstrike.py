@@ -16,5 +16,3 @@ class BeaconSimulator:
             time.sleep(self.jitter())
 
               
-
-              
