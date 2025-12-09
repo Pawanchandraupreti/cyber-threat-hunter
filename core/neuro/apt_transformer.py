@@ -20,5 +20,3 @@ class APTDetector(torch.nn.Module):
     def detect(self, log_sequence):
         outputs = self.model(**log_sequence)
         return [self.technique_map[i] for i in torch.argmax(outputs.logits, dim=1)]
-    
-    
