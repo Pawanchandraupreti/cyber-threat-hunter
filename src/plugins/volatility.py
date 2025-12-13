@@ -21,4 +21,3 @@ class ThreatScanner:
             for plugin in plugins
             
         }
-
