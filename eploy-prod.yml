@@ -10,3 +10,5 @@
     terraform apply -auto-approve -var="env=prod"
 
     
+
+    
