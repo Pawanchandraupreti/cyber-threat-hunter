@@ -22,3 +22,5 @@ class APTDetector(torch.nn.Module):
         return [self.technique_map[i] for i in torch.argmax(outputs.logits, dim=1)]
 
         
+
+        
