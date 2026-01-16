@@ -10,8 +10,4 @@
 | Elevation       | Least privilege service accounts    | T1068          |
 
 ## MITRE ATT&CK Coverage
-![ATT&CK Matrix](artifacts/mitre_coverage.png)
-
-
-
-
+![ATT&CK Matrix](artifacts/mitre_coverage.png
