@@ -8,5 +8,3 @@ graph LR
     C --> D[Anonymization Engine]
     D --> E[Detection Cluster]
     
-
-    
