@@ -21,5 +21,3 @@ class LLMDetector(nn.Module):
         )
         return self.model(**inputs).logits
 
-
-
