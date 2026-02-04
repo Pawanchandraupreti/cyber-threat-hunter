@@ -13,5 +13,3 @@ COPY config/ config/
 ENV PYTHONPATH=/app
 
 CMD ["python", "src/core/main.py", "--config", "config/prod.yml"]
-
-
