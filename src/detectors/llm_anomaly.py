@@ -20,3 +20,5 @@ class LLMDetector(nn.Module):
             return_tensors="pt"
         )
         return self.model(**inputs).logits
+    
+    
