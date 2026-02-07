@@ -31,8 +31,4 @@ class SlackNotifier:
             return response.status_code == 200
         except Exception as e:
             logging.error(f"Slack notification failed: {e}")
-            return False      
-
-            
-
-            
+            return False          
