@@ -22,7 +22,3 @@ class ThreatScanner:
             
         }
     
-
-    
-
-    
