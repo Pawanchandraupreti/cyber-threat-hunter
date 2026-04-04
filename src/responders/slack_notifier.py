@@ -34,5 +34,3 @@ class SlackNotifier:
             return False                 
         
         
-
-        
