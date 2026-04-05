@@ -33,4 +33,3 @@ class SlackNotifier:
             logging.error(f"Slack notification failed: {e}")
             return False                 
         
-        
