@@ -13,5 +13,3 @@ allow {
     input.user.role == "responder"
     valid_team(input.user.teams, input.payload.team)
 }
-
-
